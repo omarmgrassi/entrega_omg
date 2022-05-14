@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* INCLUYO FONT Source Sans Pro Regular 400*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2B2D42;
+}
+
+li {
+    /* PROPIEDADES LISTAS */
+    list-style: none;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* BANNER ENCABEZADO*/
+
+.sectionBanner {
+    grid-area: banner;
+}
+
+.imgCarrousel {
+    width: 100%;
+}
+
+/* BUSCADOR DE BENEFICIOS */
+
+.sectionBuscador {
+    grid-area: buscador;
+}
+
+/* FLEX */
+
+.flexFlow {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* SUSCRIPCION */
+
+.sectionSuscripcion {
+    grid-area: suscripcion;
+}
+
+.cardSuscripcion {
+    background-color: #EDF2F4;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    /*width: 33%;*/
+}
+
+.divCard {
+    margin: 20px;
+    padding: 15px;
+}
+
+.botonSuscribir {
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #2B2D42;
+}
+
+.h3Card {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 5px;
+}
+
+.imgPaquete{ 
+    width: 100%;
+    max-width: 400px;
+}
+
+.divBeneficios {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 10px;
+}
+
+/* NOVEDADES */
+
+.sectionNovedades {
+    grid-area: novedades;
+}
+
+/* LOCALIZADOR */
+
+.sectionMapa {
+    grid-area: localizador;
+}
+
+.divFAQ {
+    margin: 20px;
+    padding: 15px;
+}
+
+/* FORMULARIOS DE CONTACTO*/
+
+.campoEntrada {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/* H2 */
+
+.h2Section {
+    /* PROPIEDADES H2 SECCIONES */
+    text-align: center;
+    background-color: #EF233C;
+    color: #EDF2F4;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.h2Titulo {
+    /* PROPIEDADES TITULOS */
+    text-align: center;
+    color: #8D99AE;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 32px;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* PARRAFOS */
+
+.pCenter {
+    /* CENTRADO */
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.pUppercase {
+    text-transform: uppercase;
+}
+
+.pText {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* HEADER */
+
+.header {
+    /* PROPIEDADES HEADER*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    background-color: #EDF2F4;
+    width: 100%;
+    grid-area: header;
+}
+
+.aNav {
+    /* PROPIEDADES ANCLAS BARRA DE NAVEGACION */
+    text-decoration: none;
+    color: black;
+}
+
+.liNav {
+    /* PROPIEDADES LISTAS BARRA DE NAVEGACION */
+    display: inline-block;
+    margin: 15px;
+    padding: 5px;
+}
+
+.liFaq {
+    list-style: decimal;
+    text-align: justify;
+    margin: 5px;
+}
+
+.divHeader {
+    /* PROPIEDADES DIV HEADER */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    /* PROPIEDADES FOOTER */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    grid-area: footer;
+}
+
+.aFooter {
+    /* PROPIEDADES ANCLAS FOOTER */
+    text-decoration: none;
+    color: white;
+}
+
+.divFooter {
+    /* PROPIEDADES DIV FOOTER */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Google Map */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* MEDIA QUERIES */
+
+/* MOVIL / TABLET */
+
+@media screen and (max-width:900px){
+
+    .bodyGrid {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "banner banner banner"
+        "buscador buscador buscador"
+        "suscripcion suscripcion suscripcion"
+        "novedades novedades novedades"
+        "localizador localizador localizador"
+        "footer footer footer";
+    }
+
+    /* PARA QUE SEA FULL RESPONSIVE */    
+
+    .flexFlow {
+        flex-flow: column;
+    } 
+
+    nav {
+        display: none;
+    } 
+
+    h4 {
+        display: none;
+    }
+
+    .footer {
+        flex-flow: column;
+    }
+
+    .divHeader {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .imgLogo {
+        max-width: 150px;
+        width: 100%;
+    }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width:901px) {
+
+    .bodyGrid {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "banner banner banner"
+        "buscador buscador buscador"
+        "suscripcion suscripcion suscripcion"
+        "novedades novedades novedades"
+        "localizador localizador localizador"
+        "footer footer footer";
+    }
+
+    .flexFlow {
+        flex-flow: row;
+    }
+
+}

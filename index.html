@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Club De Beneficios</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Incluyo font Source Sans Pro Regular 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bodyGrid">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="divHeader">
+            <a href="./index.html"><img class="imgLogo" src="./img/logo_200x120.png" alt="Logo Club"></a>
+        </div>
+        <div class="divHeader pUppercase">
+            <nav>
+                <ul>
+                    <li class="liNav"><a class="aNav" href="./index.html">Inicio</a></li>
+                    <li class="liNav"><a class="aNav" href="./pages/planes.html">Suscribite</a></li>
+                    <li class="liNav"><a class="aNav" href="./pages/contacto.html">Atención al socio</a></li>
+                    <li class="liNav"><a class="aNav" href="./pages/beneficios.html">Beneficios</a></li>
+                    <li class="liNav"><a class="aNav" href="./pages/comerciosclub.html">Adherí tu comercio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="divHeader">
+            <h4>Seguinos en redes</h4>
+            <img class="icono" src="./img/linkedin_icon.png" alt="Logo Linked In">
+            <img src="./img/facebook_icon.png" alt="Logo Facebook">
+            <img src="./img/instagram_icon.png" alt="Logo Instagram"> 
+            <img src="./img/twitter_icon_header.png" alt="Logo Twitter">
+        </div>
+    </header>
+
+    <!-- Seccion imagen ENCABEZADO (proximamente carrousel) -->
+    <section class="sectionBanner">
+        <img class="imgCarrousel" src="./img/jumbo_banner.jpg" alt="Foto banner Vea">
+    </section>
+
+    <!-- Seccion BUSCADOR -->
+    <section class="sectionBuscador">
+        <div>
+            <h2 class="h2Section">¿Qué estas buscando?</h2>
+        </div>
+        <div>
+            <p class="pCenter">
+                <input class="campoEntrada" id="query" type="text" placeholder="Buscar beneficios">
+                <a class="botonSuscribir" href="#">BUSCAR</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Seccion SUSCRIBITE -->
+    <section class="sectionSuscripcion">
+        <!-- Encabezado Seccion -->
+        <div>
+            <a href="./pages/planes.html" class="aNav">
+                <h2 class="h2Section">Suscribite</h2>
+            </a>
+        </div>
+        <!-- Inicio container -->
+        <div class="container">
+            <!-- Cards con distintas promos -->
+            <div class="flexFlow">
+                <!-- Oferta -->
+                <div class="cardSuscripcion">
+                    <div>
+                        <h3 class="h3Card">Oferta</h3>
+                    </div>
+                    <div>
+                        <img class="imgPaquete" src="./img/promo_oferta.png" alt="Promo Oferta">
+                    </div>
+                    <div class="divCard">
+                        <ul>
+                            <li>- Acceso ilimitado al sitio de noticias</li>
+                            <li>- Contenido exclusivo</li>
+                            <li>- Newsletter premium</li>
+                            <li>- Una (1) tarjeta de beneficios MiClub</li>
+                        </ul>
+                    </div>
+                    <div class="divCard">
+                        <a class="botonSuscribir" href="#">SUSCRIBITE</a>
+                    </div>
+                </div>
+                <!-- Mejor Precio -->
+                <div class="cardSuscripcion">
+                    <div>
+                        <h3 class="h3Card">Mejor precio</h3>
+                    </div>
+                    <div>
+                        <img class="imgPaquete" src="./img/promo_mejor.png" alt="Promo Mejor Precio">
+                    </div>
+                    <div class="divCard">
+                        <ul>
+                            <li>- Acceso ilimitado al sitio de noticias</li>
+                            <li>- Contenido exclusivo</li>
+                            <li>- Newsletter premium</li>
+                            <li>- Dos (2) tarjetas de beneficio MiClub</li>
+                        </ul>
+                    </div>
+                    <div class="divCard">
+                        <a class="botonSuscribir" href="#">SUSCRIBITE</a>
+                    </div>
+                </div>
+                <!-- Recomendado -->
+                <div class="cardSuscripcion">
+                    <div>
+                        <h3 class="h3Card">Recomendado</h3>
+                    </div>
+                    <div>
+                        <img class="imgPaquete" src="./img/promo_recomendada.png" alt="Promo Recomendado">
+                    </div>
+                    <div class="divCard">
+                        <ul>
+                            <li>- Acceso ilimitado al sitio de noticias</li>
+                            <li>- Contenido exclusivo</li>
+                            <li>- Dos (2) tarjetas de beneficio MiClub</li>
+                            <li>- Diario impreso</li>
+                        </ul>
+                    </div>
+                    <div class="divCard">
+                        <a class="botonSuscribir" href="#">SUSCRIBITE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin container -->
+    </section>
+
+    <!-- Sección NOVEDADES -->
+    <section class="sectionNovedades">
+        <!-- Encabezado Seccion -->
+        <div>
+            <a href="./pages/beneficios.html" class="aNav">
+                <h2 class="h2Section">Novedades</h2>
+            </a>
+        </div>
+        <!-- Inicio container -->
+        <div class="container"> 
+            <!-- Cards con nuevos beneficios -->
+            <div class="flexFlow">
+                <div class="divBeneficios">
+                    <img src="./img/beer-point.png" alt="Logo comercio BeerPoint">
+                </div>
+                <div class="divBeneficios">
+                    <img src="./img/nada-pescaderia-min.png" alt="Logo comercio Nada">
+                </div>
+                <div class="divBeneficios">
+                    <img src="./img/del-aire-min.jpg" alt="Logo comercio Del Aire">
+                </div>
+                <div class="divBeneficios">
+                    <img src="./img/almacen-mendocino-min.jpg" alt="Logo comercio Almacen Mendocino">
+                </div>
+            </div>
+        </div>
+        <!-- Fin container -->
+    </section>
+
+    <!-- Sección BENEFICIOS MAS CERCANOS -->
+    <section class="sectionMapa">
+        <!-- Encabezado Seccion -->
+        <div>
+            <h2 class="h2Section">Beneficios mas cercanos</h2>
+        </div>
+        <!-- Mapa GoogleMaps -->
+        <div class="container">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.4262233687355!2d-67.57810798464578!3d-39.02840037955055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a1d2c33d70d03%3A0x2d35df691ad41c69!2sTucum%C3%A1n%20%26%20Avenida%20General%20Julio%20Argentino%20Roca%2C%20Gral.%20Roca%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1650154230194!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="divFooter">
+            <a href="./index.html"><img src="./img/logobn50.png" alt="Logo Footer"></a>
+        </div>
+        <div class="divFooter">
+            <ul>
+                <li><a class="aFooter" href="./pages/quienessomos.html">Quiénes somos</a></li>
+                <li><a class="aFooter" href="./pages/faq.html">Preguntas frecuentes</a></li>
+                <li><a class="aFooter" href="./pages/planes.html">Pedí tu tarjeta</a></li>
+            </ul>
+        </div>
+        <div class="divFooter">
+            <p>Sitio Web creado por OMG. <strong>Todos los derechos reservados</strong>. 2022</p>
+        </div>
+        <div class="divFooter">
+            <h4>Seguinos en redes</h4>
+            <img src="./img/linkedin_icon.png" alt="Logo Linked In">
+            <img src="./img/facebook_icon.png" alt="Logo Facebook">
+            <img src="./img/instagram_icon.png" alt="Logo Instagram">
+            <img src="./img/twitter_icon.png" alt="Logo Twitter">
+        </div>
+    </footer>
+
+</body>
+</html>
