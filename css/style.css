@@ -18,6 +18,10 @@ section {
     margin-bottom: 20px;
 }
 
+h4 {
+    margin-bottom: 5px;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -65,7 +69,6 @@ section {
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
-    /*width: 33%;*/
 }
 
 .divCard {
@@ -81,8 +84,15 @@ section {
     display: inline-block;
     padding: 14px 32px;
     border-radius: 4px;
-    color: #fff;
+    color: #FFFFFF;
     background-color: #2B2D42;
+}
+
+/* TRANSICION SOBRE BOTONES */
+
+.botonSuscribir:hover {
+    background-color: #8D99AE;
+    color: #000000;
 }
 
 .h3Card {
@@ -103,6 +113,15 @@ section {
     box-shadow: 3px 3px 10px;
 }
 
+/* ESCALADO DE CARD DE BENEFICIOS 10% */
+
+.divBeneficios:hover {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 10px;
+    transform: scale(1.1,1.1);
+}
+
 /* NOVEDADES */
 
 .sectionNovedades {
@@ -120,7 +139,7 @@ section {
     padding: 15px;
 }
 
-/* FORMULARIOS DE CONTACTO*/
+/* FORMULARIOS DE CONTACTO */
 
 .campoEntrada {
     display: block;
@@ -176,20 +195,20 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* justify-content: space-between; */
-    background-color: #EDF2F4;
+    /* background-color: #EDF2F4; */
+    background-image: linear-gradient(to top, grey, #EDF2F4); /* APLICO GRADIENTE */
     width: 100%;
     grid-area: header;
 }
 
 .aNav {
-    /* PROPIEDADES ANCLAS BARRA DE NAVEGACION */
+    /* PROPIEDADES ANCLAS */
     text-decoration: none;
     color: black;
 }
 
 .liNav {
-    /* PROPIEDADES LISTAS BARRA DE NAVEGACION */
+    /* PROPIEDADES LISTAS */
     display: inline-block;
     margin: 15px;
     padding: 5px;
