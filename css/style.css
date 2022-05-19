@@ -54,21 +54,11 @@ h4 {
 
 /* SUSCRIPCION */
 
-.sectionSuscripcion {
-    grid-area: suscripcion;
-}
-
 .cardSuscripcion {
     background-color: #EDF2F4;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 10px;
+    border: 1px solid #8D99AE;
+    padding: 15px;
     border-radius: 4px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .divCard {
@@ -78,7 +68,7 @@ h4 {
 
 .botonSuscribir {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
     display: inline-block;
@@ -86,6 +76,10 @@ h4 {
     border-radius: 4px;
     color: #FFFFFF;
     background-color: #2B2D42;
+}
+
+.bgRecomendado {
+    background-color: #8D99AE;
 }
 
 /* TRANSICION SOBRE BOTONES */
@@ -155,7 +149,7 @@ h4 {
     text-align: center;
     background-color: #EF233C;
     color: #EDF2F4;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 5px;
 }
 
@@ -190,15 +184,14 @@ h4 {
 
 /* HEADER */
 
-.header {
-    /* PROPIEDADES HEADER*/
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* background-color: #EDF2F4; */
+.navColor {
+    /* FONDO HEADER */
     background-image: linear-gradient(to top, grey, #EDF2F4); /* APLICO GRADIENTE */
-    width: 100%;
-    grid-area: header;
+}
+
+.navLogo {
+    /* PROPIEDADES LOGO HEADER */
+    width: 120px;
 }
 
 .aNav {
@@ -208,13 +201,14 @@ h4 {
 }
 
 .liNav {
-    /* PROPIEDADES LISTAS */
+    /* LISTAS NAV */
     display: inline-block;
     margin: 15px;
     padding: 5px;
 }
 
 .liFaq {
+    /* LISTAS FAQ */
     list-style: decimal;
     text-align: justify;
     margin: 5px;
@@ -233,13 +227,8 @@ h4 {
 
 .footer {
     /* PROPIEDADES FOOTER */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: black;
     color: white;
-    width: 100%;
-    grid-area: footer;
 }
 
 .aFooter {
@@ -274,72 +263,3 @@ h4 {
     position:absolute;
 }
 
-/* MEDIA QUERIES */
-
-/* MOVIL / TABLET */
-
-@media screen and (max-width:900px){
-
-    .bodyGrid {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "banner banner banner"
-        "buscador buscador buscador"
-        "suscripcion suscripcion suscripcion"
-        "novedades novedades novedades"
-        "localizador localizador localizador"
-        "footer footer footer";
-    }
-
-    /* PARA QUE SEA FULL RESPONSIVE */    
-
-    .flexFlow {
-        flex-flow: column;
-    } 
-
-    nav {
-        display: none;
-    } 
-
-    h4 {
-        display: none;
-    }
-
-    .footer {
-        flex-flow: column;
-    }
-
-    .divHeader {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .imgLogo {
-        max-width: 150px;
-        width: 100%;
-    }
-
-}
-
-/* DESKTOP */
-
-@media screen and (min-width:901px) {
-
-    .bodyGrid {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "banner banner banner"
-        "buscador buscador buscador"
-        "suscripcion suscripcion suscripcion"
-        "novedades novedades novedades"
-        "localizador localizador localizador"
-        "footer footer footer";
-    }
-
-    .flexFlow {
-        flex-flow: row;
-    }
-
-}
