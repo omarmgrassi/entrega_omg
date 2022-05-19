@@ -29,27 +29,8 @@ h4 {
 
 /* BANNER ENCABEZADO*/
 
-.sectionBanner {
-    grid-area: banner;
-}
-
 .imgCarrousel {
     width: 100%;
-}
-
-/* BUSCADOR DE BENEFICIOS */
-
-.sectionBuscador {
-    grid-area: buscador;
-}
-
-/* FLEX */
-
-.flexFlow {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
 }
 
 /* SUSCRIPCION */
@@ -233,7 +214,7 @@ h4 {
 
 .aFooter {
     /* PROPIEDADES ANCLAS FOOTER */
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
 }
 
@@ -246,7 +227,7 @@ h4 {
     text-align: center;
 }
 
-/* Google Map */
+/* GOOGLE MAP */
 
 .map-responsive{
     overflow:hidden;
