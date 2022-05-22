@@ -57,6 +57,7 @@ h4 {
     border-radius: 4px;
     color: #FFFFFF;
     background-color: #2B2D42;
+    transition: all 0.7s;
 }
 
 .bgRecomendado {
@@ -86,6 +87,7 @@ h4 {
     margin: 10px;
     padding: 5px;
     box-shadow: 3px 3px 10px;
+    transition: all 1s;
 }
 
 /* ESCALADO DE CARD DE BENEFICIOS 10% */
@@ -225,6 +227,10 @@ h4 {
     margin: 10px;
     padding: 5px;
     text-align: center;
+}
+
+.ulFooter {
+    padding-left: 0px;
 }
 
 /* GOOGLE MAP */
