@@ -1,0 +1,71 @@
+//
+// DEFINICION DE ESTILOS CUERPO PRINCIPAL PROYECTO MICLUBDEBENEFICIOS
+// AUTOR: OMG
+//
+section {
+
+    margin-bottom: $margin-h2;
+
+    .h2Section {
+        text-align: center;
+        background-color: $color-rojo-claro;
+        color: $color-claro;
+        margin-bottom: $margin-h2;
+        padding: $padding-h2;        
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .cardSuscripcion {
+        background-color: $color-claro;
+        border: 1px solid $color-gris-claro;
+        padding: $padding-card;
+        border-radius: $radio;
+    }
+    
+    .divCard {
+        margin: $margin-card;
+        padding: $padding-card;
+    }
+
+    .bgRecomendado {
+        background-color: $color-gris-claro;
+    }
+
+    .imgPaquete{ 
+        width: 100%;
+        max-width: $max-width;
+    }
+
+    .divBeneficios {
+        margin: $margin-ben;
+        padding: $padding-ben;
+        transition: all 1s;
+
+        &:hover {
+            margin: $margin-ben;
+            padding: $padding-ben;
+            transform: scale(1.1,1.1);
+        }
+    }
+
+    /* GOOGLE MAP */
+
+    .map-responsive{
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    
+    .map-responsive iframe{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+}

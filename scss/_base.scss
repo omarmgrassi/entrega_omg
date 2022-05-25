@@ -1,0 +1,38 @@
+//
+// CONFIGURACION DE BASE PROYECTO MICLUBDEBENEFICIOS
+// AUTOR: OMG
+//
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS */
+body {
+    /* INCLUYO FONT Source Sans Pro Regular 400*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $color-gris-oscuro;
+}
+
+/* BOTONES */
+.botonSuscribir {
+    text-decoration: none;
+    font-size: $tamFontBoton;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: $letter-sp;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: $radio;
+    color: white;
+    background-color: $color-gris-oscuro;
+    transition: all 0.7s;
+
+    &:hover {
+        background-color: $color-gris-claro;
+        color: black;
+    }
+
+}

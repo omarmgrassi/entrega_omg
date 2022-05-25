@@ -1,0 +1,105 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* FONTS */
+body {
+  /* INCLUYO FONT Source Sans Pro Regular 400*/
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2B2D42; }
+
+/* BOTONES */
+.botonSuscribir {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  color: white;
+  background-color: #2B2D42;
+  transition: all 0.7s; }
+  .botonSuscribir:hover {
+    background-color: #8D99AE;
+    color: black; }
+
+header nav {
+  background-image: linear-gradient(to top, #8D99AE, #EDF2F4);
+  font-weight: bold; }
+  header nav div a img {
+    width: 120px; }
+  header nav a {
+    /* PROPIEDADES ANCLAS */
+    text-decoration: none;
+    color: black; }
+  header nav li {
+    /* LISTAS NAV */
+    display: inline-block;
+    margin: 0px;
+    padding: 5px; }
+    header nav li:hover {
+      text-decoration: underline; }
+  header nav h6 {
+    margin-bottom: 5px; }
+
+section {
+  margin-bottom: 20px;
+  /* GOOGLE MAP */ }
+  section .h2Section {
+    text-align: center;
+    background-color: #EF233C;
+    color: #EDF2F4;
+    margin-bottom: 20px;
+    padding: 5px; }
+  section a {
+    text-decoration: none; }
+  section .cardSuscripcion {
+    background-color: #EDF2F4;
+    border: 1px solid #8D99AE;
+    padding: 15px;
+    border-radius: 4px; }
+  section .divCard {
+    margin: 20px;
+    padding: 15px; }
+  section .bgRecomendado {
+    background-color: #8D99AE; }
+  section .imgPaquete {
+    width: 100%;
+    max-width: 400px; }
+  section .divBeneficios {
+    margin: 10px;
+    padding: 5px;
+    transition: all 1s; }
+    section .divBeneficios:hover {
+      margin: 10px;
+      padding: 5px;
+      transform: scale(1.1, 1.1); }
+  section .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  section .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+footer {
+  /* PROPIEDADES FONDO FOOTER */
+  background-color: black;
+  color: white; }
+  footer a {
+    /* PROPIEDADES ANCLAS FOOTER */
+    text-decoration: none;
+    color: white; }
+  footer ul {
+    /* PROPIEDADES LISTAS */
+    padding-left: 0px; }
+    footer ul li {
+      /* PROPIEDADES ITEMS */
+      list-style: none; }

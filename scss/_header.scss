@@ -1,0 +1,44 @@
+//
+// DEFINICION DE ESTILOS HEADER PROYECTO MICLUBDEBENEFICIOS
+// AUTOR: OMG
+//
+header {
+
+    nav {
+
+        background-image: linear-gradient(to top,  $color-gris-claro, $color-claro);
+        font-weight: bold;
+
+        div {
+            a {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+      
+        a {
+            /* PROPIEDADES ANCLAS */
+            text-decoration: none;
+            color: black;
+        }
+        
+        li {
+            /* LISTAS NAV */
+            display: inline-block;
+            margin: $margin-nav;
+            padding: $padding-nav;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        h6 {
+            margin-bottom: $margin-redes;
+        }
+
+    }
+
+}
