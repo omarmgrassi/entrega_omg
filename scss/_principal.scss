@@ -4,14 +4,15 @@
 //
 section {
 
-    margin-bottom: $margin-h2;
+    margin-bottom: map-get($margenes, "extra large");
 
     .h2Section {
         text-align: center;
         background-color: $color-rojo-claro;
         color: $color-claro;
-        margin-bottom: $margin-h2;
-        padding: $padding-h2;        
+        /* MAP-GET */
+        margin-bottom: map-get($margenes, "extra large");
+        padding: map-get($paddings, "small");
     }
 
     a {
@@ -19,15 +20,13 @@ section {
     }
 
     .cardSuscripcion {
-        background-color: $color-claro;
-        border: 1px solid $color-gris-claro;
-        padding: $padding-card;
-        border-radius: $radio;
+        /* MIXIN */
+        @include estiloCardSuscripcion;
     }
     
     .divCard {
-        margin: $margin-card;
-        padding: $padding-card;
+        margin: map-get($margenes, "extra large");
+        padding: map-get($paddings, "large");
     }
 
     .bgRecomendado {
@@ -40,13 +39,13 @@ section {
     }
 
     .divBeneficios {
-        margin: $margin-ben;
-        padding: $padding-ben;
+        margin: map-get($margenes, "medium");
+        padding: map-get($paddings, "small");
         transition: all 1s;
 
         &:hover {
-            margin: $margin-ben;
-            padding: $padding-ben;
+            margin: map-get($margenes, "medium");
+            padding: map-get($paddings, "small");
             transform: scale(1.1,1.1);
         }
     }

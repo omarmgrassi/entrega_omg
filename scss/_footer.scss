@@ -12,11 +12,15 @@ footer {
         /* PROPIEDADES ANCLAS FOOTER */
         text-decoration: none;
         color: white;
+
+        &:hover {
+            color: $color-rojo-claro;
+        }
     }
     
     ul {
         /* PROPIEDADES LISTAS */
-        padding-left: 0px;
+        padding-left: map-get($paddings, "zero");
         
         li {
             /* PROPIEDADES ITEMS */

@@ -26,8 +26,8 @@ header {
         li {
             /* LISTAS NAV */
             display: inline-block;
-            margin: $margin-nav;
-            padding: $padding-nav;
+            margin:  map-get($margenes, "zero");
+            padding: map-get($paddings, "small");
 
             &:hover {
                 text-decoration: underline;
@@ -36,7 +36,7 @@ header {
         }
 
         h6 {
-            margin-bottom: $margin-redes;
+            margin-bottom: map-get($margenes, "small");
         }
 
     }

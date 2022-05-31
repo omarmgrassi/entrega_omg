@@ -17,7 +17,7 @@ body {
 }
 
 /* BOTONES */
-.botonSuscribir {
+.boton {
     text-decoration: none;
     font-size: $tamFontBoton;
     text-transform: uppercase;
@@ -26,9 +26,15 @@ body {
     display: inline-block;
     padding: 14px 32px;
     border-radius: $radio;
+    transition: all 0.7s;
+}
+
+
+/* BOTON SUSCRIPCION */
+.botonSuscribir {
+    @extend .boton;
     color: white;
     background-color: $color-gris-oscuro;
-    transition: all 0.7s;
 
     &:hover {
         background-color: $color-gris-claro;
@@ -36,3 +42,29 @@ body {
     }
 
 }
+
+/* BOTON BUSQUEDA */
+.botonBusqueda {
+    @extend .boton;
+    color: white;
+    background-color: $color-rojo-claro;
+
+    &:hover {
+        background-color: $color-claro;
+        color: $color-rojo-oscuro;
+        border: 1px grey solid;
+    }
+
+}
+
+/* MIXIN CARD SUSCRIPCION */
+@mixin estiloCardSuscripcion {
+    background-color: $color-claro;
+    border: 1px solid $color-gris-claro;
+    padding: $padding-card;
+    border-radius: $radio;
+}
+
+/* MAPS */
+$margenes : ("zero": 0px, "small": 5px, "medium": 10px, "large": 15px, "extra large": 20px);
+$paddings : ("zero": 0px, "small": 5px, "medium": 10px, "large": 15px, "extra large": 20px);
