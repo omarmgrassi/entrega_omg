@@ -6,6 +6,17 @@ section {
 
     margin-bottom: map-get($margenes, "extra large");
 
+    .h2Titulo {
+        /* PROPIEDADES TITULOS */
+        text-align: center;
+        color: #8D99AE;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 32px;
+        margin: 20px;
+        padding: 15px;
+    }
+
     .h2Section {
         text-align: center;
         background-color: $color-rojo-claro;
@@ -48,6 +59,24 @@ section {
             padding: map-get($paddings, "small");
             transform: scale(1.1,1.1);
         }
+    }
+
+    .pText {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .liFaq {
+        /* LISTAS FAQ */
+        list-style: decimal;
+        text-align: justify;
+        margin: 5px;
+    }
+
+    .aNav {
+        /* PROPIEDADES ANCLAS */
+        text-decoration: none;
+        color: $color-gris-oscuro;
     }
 
     /* GOOGLE MAP */

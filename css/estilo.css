@@ -62,6 +62,15 @@ header nav {
 section {
   margin-bottom: 20px;
   /* GOOGLE MAP */ }
+  section .h2Titulo {
+    /* PROPIEDADES TITULOS */
+    text-align: center;
+    color: #8D99AE;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 32px;
+    margin: 20px;
+    padding: 15px; }
   section .h2Section {
     text-align: center;
     background-color: #EF233C;
@@ -93,6 +102,18 @@ section {
       margin: 10px;
       padding: 5px;
       transform: scale(1.1, 1.1); }
+  section .pText {
+    margin: 10px;
+    padding: 5px; }
+  section .liFaq {
+    /* LISTAS FAQ */
+    list-style: decimal;
+    text-align: justify;
+    margin: 5px; }
+  section .aNav {
+    /* PROPIEDADES ANCLAS */
+    text-decoration: none;
+    color: #2B2D42; }
   section .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
