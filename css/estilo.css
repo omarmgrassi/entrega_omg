@@ -38,6 +38,14 @@ body {
     color: #D90429;
     border: 1px grey solid; }
 
+/* BOTON CONFIRMACION MODAL */
+.botonConfirmar {
+  padding: 6px 12px;
+  color: white;
+  background-color: #EF233C; }
+  .botonConfirmar:hover {
+    color: white; }
+
 /* MIXIN CARD SUSCRIPCION */
 /* MAPS */
 header nav {
@@ -114,6 +122,10 @@ section {
     /* PROPIEDADES ANCLAS */
     text-decoration: none;
     color: #2B2D42; }
+  section .etiqTabla {
+    color: #2B2D42; }
+  section .checkColor {
+    color: #EF233C; }
   section .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
