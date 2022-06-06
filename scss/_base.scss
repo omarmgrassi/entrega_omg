@@ -47,11 +47,12 @@ body {
     @extend .boton;
     color: white;
     background-color: $color-rojo-claro;
+    border: 0px $color-rojo-claro solid;
 
     &:hover {
-        background-color: $color-claro;
+        background-color: $color-gris-claro;
         color: $color-rojo-oscuro;
-        border: 1px grey solid;
+        border: 0px grey solid;
     }
 
 }

@@ -32,11 +32,12 @@ body {
 /* BOTON BUSQUEDA */
 .botonBusqueda {
   color: white;
-  background-color: #EF233C; }
+  background-color: #EF233C;
+  border: 0px #EF233C solid; }
   .botonBusqueda:hover {
-    background-color: #EDF2F4;
+    background-color: #8D99AE;
     color: #D90429;
-    border: 1px grey solid; }
+    border: 0px grey solid; }
 
 /* BOTON CONFIRMACION MODAL */
 .botonConfirmar {
@@ -122,6 +123,8 @@ section {
     /* PROPIEDADES ANCLAS */
     text-decoration: none;
     color: #2B2D42; }
+  section .aBusq {
+    color: white; }
   section .etiqTabla {
     color: #2B2D42; }
   section .checkColor {
