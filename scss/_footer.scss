@@ -7,8 +7,6 @@ footer {
     /* PROPIEDADES FONDO FOOTER */
     background-color: black;
     color: white;
-    margin-bottom: 45px;
-    padding-bottom: 45px;
     
     a {
         /* PROPIEDADES ANCLAS FOOTER */
@@ -32,6 +30,13 @@ footer {
 
 }
 
+.footerHome {
+    /* EXTIENDO EL FOOTER AGREGANDO MARGIN Y PADDING PARA QUE EL ZOCALO NO TAPE EL FOOTER */
+    @extend footer;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+}
+
 /* MEDIA QUERIES PARA MANEJO DEL ZOCALO */
 
 /* MOVILES Y TABLETS */
@@ -50,41 +55,10 @@ footer {
 /* DISPOSITIVOS ENTRE 1024 Y 1200 PX */
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    /* SE MUESTRA SOLO ZOCALO SIN IMAGEN TARJETA PARA QUE NO SE SOLAPE CON EL TEXTO*/
+    /* SE MUESTRA SOLO ZOCALO SIN IMAGEN TARJETA PARA QUE ESTA NO TAPE EL TEXTO*/
     .zocalo {
-        background-image: url("../img/fondo-zocalo-2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        z-index: 0;
-        bottom: 0;
-        width: 100%;
-    
-        .container {
-            position: relative;
-        }
-
         .container p::before {
             content: none;
-        }
-
-        p {
-            /* PROPIEDADES PARRAFO ZOCALO */
-            text-align: center;
-            font-size: 2em;
-        }
-    
-        a {
-            /* PROPIEDADES ANCLAS ZOCALO */
-            text-decoration: none;
-            color: $color-claro;
-    
-            &:hover {
-                color: $color-rojo-claro;
-            }
         }
     }
 }
