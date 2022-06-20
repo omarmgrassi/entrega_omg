@@ -58,7 +58,6 @@ body {
 }
 
 /* BOTON CONFIRMACION MODAL */
-
 .botonConfirmar {
     padding: 6px 12px;
     color: white;
@@ -80,3 +79,46 @@ body {
 /* MAPS */
 $margenes : ("zero": 0px, "small": 5px, "medium": 10px, "large": 15px, "extra large": 20px);
 $paddings : ("zero": 0px, "small": 5px, "medium": 10px, "large": 15px, "extra large": 20px);
+
+/* ZOCALO */
+.zocalo {
+    background-image: url("../img/fondo-zocalo-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    width: 100%;
+
+    .container {
+        position: relative;
+    }
+
+    .container p::before {
+        display: block;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        left: 25px;
+        top: -85px;
+        content: url("../img/tarjeta-2-190.png");
+    }
+
+    p {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    a {
+        /* PROPIEDADES ANCLAS ZOCALO */
+        text-decoration: none;
+        color: $color-claro;
+
+        &:hover {
+            color: $color-rojo-claro;
+        }
+    }
+}
