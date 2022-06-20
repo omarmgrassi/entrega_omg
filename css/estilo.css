@@ -173,24 +173,27 @@ section {
     width: 100%;
     position: absolute; }
 
-footer {
+footer, .footerHome {
   /* PROPIEDADES FONDO FOOTER */
   background-color: black;
-  color: white;
-  margin-bottom: 45px;
-  padding-bottom: 45px; }
-  footer a {
+  color: white; }
+  footer a, .footerHome a {
     /* PROPIEDADES ANCLAS FOOTER */
     text-decoration: none;
     color: white; }
-    footer a:hover {
+    footer a:hover, .footerHome a:hover {
       color: #EF233C; }
-  footer ul {
+  footer ul, .footerHome ul {
     /* PROPIEDADES LISTAS */
     padding-left: 0px; }
-    footer ul li {
+    footer ul li, .footerHome ul li {
       /* PROPIEDADES ITEMS */
       list-style: none; }
+
+.footerHome {
+  /* EXTIENDO EL FOOTER AGREGANDO MARGIN Y PADDING PARA QUE EL ZOCALO NO TAPE EL FOOTER */
+  margin-bottom: 45px;
+  padding-bottom: 45px; }
 
 /* MEDIA QUERIES PARA MANEJO DEL ZOCALO */
 /* MOVILES Y TABLETS */
@@ -198,35 +201,12 @@ footer {
   /* SE OCULTA ZOCALO*/
   .zocalo {
     display: none; }
-  footer {
+  footer, .footerHome {
     margin-bottom: 0px;
     padding-bottom: 0px; } }
 
 /* DISPOSITIVOS ENTRE 1024 Y 1200 PX */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  /* SE MUESTRA SOLO ZOCALO SIN IMAGEN TARJETA PARA QUE NO SE SOLAPE CON EL TEXTO*/
-  .zocalo {
-    background-image: url("../img/fondo-zocalo-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    z-index: 0;
-    bottom: 0;
-    width: 100%; }
-    .zocalo .container {
-      position: relative; }
-    .zocalo .container p::before {
-      content: none; }
-    .zocalo p {
-      /* PROPIEDADES PARRAFO ZOCALO */
-      text-align: center;
-      font-size: 2em; }
-    .zocalo a {
-      /* PROPIEDADES ANCLAS ZOCALO */
-      text-decoration: none;
-      color: #EDF2F4; }
-      .zocalo a:hover {
-        color: #EF233C; } }
+  /* SE MUESTRA SOLO ZOCALO SIN IMAGEN TARJETA PARA QUE ESTA NO TAPE EL TEXTO*/
+  .zocalo .container p::before {
+    content: none; } }
